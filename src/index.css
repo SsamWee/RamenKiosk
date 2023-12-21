@@ -1,0 +1,133 @@
+html,
+body {}
+
+.buttonx3 {
+  font-size: 20px;
+  color: #fff;
+  background-color: #a71f1f;
+  padding: 10px 30px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+  border-radius: 10px;
+  transition: 639ms;
+  cursor: pointer;
+}
+
+.buttonx3:hover {
+  transition: 639ms;
+  padding: 10px 47px;
+  transform: translateY(-0px);
+  background-color: #a84a4a;
+  color: #ffffff;
+  border: none;
+
+}
+
+.return {
+  width: 100px;
+  height: 100px;
+  transition: transform 0.5s;
+}
+
+.return:hover {
+  transform: scale(1.5);
+}
+
+.custom-ramen-image {
+  background-image: url('./assets/CustomRamen.jpeg');
+  background-position: center center;
+  background-size: 100vh;
+  width: 500px;
+  height: 75vh;
+  border-radius: 15px;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel:before,
+.carousel:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 5%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.carousel:before {
+  left: 0;
+  background: linear-gradient(to right, white, transparent);
+}
+
+.carousel:after {
+  right: 0;
+  background: linear-gradient(to left, white, transparent);
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr; /* una sola columna */
+  grid-template-rows: repeat(2, 1fr); /* dos filas */
+  grid-auto-flow: column; /* los elementos adicionales se colocan en columnas */
+  height: 75vh;
+  
+}
+
+.primary-container {
+  background-color:rgb(245, 241, 234);
+  width: 250px;
+  height: 300px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.img-prueba {
+  max-width: 150px;
+  border-radius: 15px;
+}
+
+.icon {
+  max-width: 35px;
+  max-height: 35px;
+}
+
+/* El modal (fondo) */
+.modal-background {
+  position: fixed; /* Fijo en la pantalla */
+  z-index: 1; /* Por encima de los demás elementos */
+  left: 0;
+  top: 0;
+  width: 100%; /* Ancho completo */
+  height: 100%; /* Alto completo */
+  overflow: auto; /* Habilitar el scroll si es necesario */
+  background-color: rgba(255, 255, 255, 0.8); /* Color de fondo semi-transparente */
+  pointer-events: none; /* Deshabilitar los eventos de ratón */
+}
+
+/* El contenido del modal */
+.modal-content {
+  position: fixed; /* Fijo en la pantalla */
+  background-color: rgb(245, 241, 234); /* Color de fondo gris */
+  margin: auto; /* Centrado */
+  padding: 20px; /* Relleno */
+  border-radius: 15px;
+  width: 30%; /* Ancho mediano */
+  height: 50%; /* Alto mediano */
+  top: calc(50% - 25%); /* Centrado vertical */
+  left: calc(50% - 15%); /* Centrado horizontal */
+}
+
+
+
+/* Esto oculta la barra de scroll pero no anula la funcionalidad */
+/* ::-webkit-scrollbar {
+  display: none;
+} */
