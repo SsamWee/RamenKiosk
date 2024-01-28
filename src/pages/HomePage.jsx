@@ -1,21 +1,27 @@
-import { useContext } from "react"
+import { useContext } from "react";
 import { Service, Language } from "../components"
-import { RamenContext } from "../context/RamenContext"
+import { AppContext } from "../context/AppContext"
 
 export const HomePage = () => {
 
-    const { user } = useContext( RamenContext );
-    console.log(user)
-
+    const { user } = useContext(AppContext);
 
     return (
-        <> 
-            <div className="container d-flex flex-column justify-content-center align-items-center mt-4" >
-                <img className="w-50" src="./src/assets/Logo.png" alt="Kagurashi Ramen Logo" />
-                <h1 className="mt-3">Kagurashi Ramen</h1>
+        <>
+            <div className="page-container" >
+                <div className="page-subcontainer">
+                    <div className="logo-container">
+                        <img className="logo animate__animated animate__fadeIn" src="./src/assets/Logo.png" alt="Kagurashi Ramen Logo" />
+                        <h1>Kagurashi Ramen</h1>
+                    </div>
+
+                    {user?.language ? <Service /> : <Language />}
+
+                </div>
+
             </div>
-            
-            {user?.language ? <Service /> : <Language />}
+
+
         </>
     )
 }

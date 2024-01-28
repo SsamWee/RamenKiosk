@@ -1,13 +1,13 @@
-import { RamenProvider } from './context/RamenProvider'
+import { AppProvider } from './context/AppProvider'
 import { AppRouter } from './router/AppRouter'
 
 export const RamenApp = () => {
 
   return (
     <>
-      <RamenProvider>
+      <AppProvider>
         <AppRouter />
-      </RamenProvider>
+      </AppProvider>
     </>
 
 

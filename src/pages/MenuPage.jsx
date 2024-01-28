@@ -1,14 +1,21 @@
-import { useRef } from "react"
-import { IoArrowBackSharp } from "react-icons/io5";
-import { useTranslation } from "react-i18next";
-import { CustomRamen, Drinks, ClassicRamen, Ramen } from "../components";
+import { useContext, useEffect, useRef } from "react"
+import { FaShoppingCart } from "react-icons/fa";
+import { IoHomeSharp } from "react-icons/io5";
+import { CustomRamen, InfoModal, ShoppingCart, Category, TimeoutModal, ResetModal } from "../components";
 import Slider from "react-slick";
+import { AppContext } from "../context/AppContext";
+import { useTimeOut } from '../hooks/useTimeOut';
 
 export const MenuPage = () => {
 
-    const { i18n, t } = useTranslation();
-    const sliderRef = useRef();
 
+    const buttonNames = ["customRamen", "classicRamen", "ramen", "drinks"];
+
+    const categories = ["classicRamen", "ramen", "drinks"];
+
+    const { i18n, t, data, showCart, setShowCart, showInfo, animateCart, showTimeout, isActive, setIsActive, showReset, setReset } = useContext(AppContext);
+
+    const sliderRef = useRef();
     const goToSlide = (index) => {
         sliderRef.current.slickGoTo(index);
     };
@@ -17,57 +24,45 @@ export const MenuPage = () => {
         className: "center",
         centerMode: false,
         infinite: false,
-        variableWidth: true,
+        variableWidth: true
     };
+
+    useTimeOut(60000, isActive);
+
+    useEffect(() => {
+        setIsActive(true);
+        return () => setIsActive(false);
+    }, []);
 
     return (
         <>
-            <div className="container-fluid">
-
-
-
-
-                <div className="container position-relative d-flex justify-content-evenly p-3 mt-3">
-
-                    <div type="button" className="d-flex position-absolute top-50 start-0 translate-middle ">
-                        <IoArrowBackSharp className="fs-2" />
-                        <h4 className="mx-1">{t('return')}</h4>
+            <div className="page-container">
+                <div className="page-subcontainer">
+                    <div className=" home-btn-container">
+                        <div type="button" className="return-container" onClick={() => setReset(true)}>
+                            <IoHomeSharp className="icon" />
+                        </div>
+                        {buttonNames.map((name, index) => (
+                            <button key={index} className="homeButton" onClick={() => goToSlide(index)}>{t(name)}</button>
+                        ))}
+                        <div type="button" className="return-container" onClick={() => setShowCart(true)}>
+                            <FaShoppingCart className={`icon ${animateCart ? 'animate__animated animate__bounce' : ''}`} />
+                        </div>
                     </div>
-
-                    <button className="buttonx3" onClick={() => goToSlide(0)}>Custom Ramen</button>
-                    <button className="buttonx3" onClick={() => goToSlide(1)}>Classic Ramen</button>
-                    <button className="buttonx3" onClick={() => goToSlide(2)}>Ramen</button>
-                    <button className="buttonx3" onClick={() => goToSlide(3)}>Drinks</button>
-
-                </div>
-
-
-
-                <div className="container-fluid carousel p-3 mt-3">
-
-
-                    <Slider {...settings} ref={sliderRef} >
-                        <div className="p-2">
+                    <div className="carousel-container">
+                        <Slider {...settings} ref={sliderRef} >
                             <CustomRamen />
-                        </div>
-
-                        <div className="p-2">
-                            <ClassicRamen />
-                        </div>
-
-                        <div className="p-2">
-                            <Ramen />
-                        </div>
-
-                        <div className="p-2">
-                            <Drinks />
-                        </div>
-
-                    </Slider>
-
+                            {categories.map((category, index) => (
+                                <Category key={index} title={category} data={data.filter(item => item.type === category)} />
+                            ))}
+                        </Slider>
+                    </div>
                 </div>
+                {showCart && (<ShoppingCart />)}
             </div>
-
+            {showInfo && (<InfoModal />)}
+            {showTimeout && (<TimeoutModal />)}
+            {showReset && (<ResetModal />)}
         </>
     )
 }
