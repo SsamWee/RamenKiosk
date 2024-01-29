@@ -336,7 +336,7 @@
   },
   {
     "id": 20,
-    "type": "Custom",
+    "type": "custom",
     "name": "Custom Ramen",
     "description": "Create your own ramen with the ingredients you prefer.",
     "ingredients": {
@@ -419,106 +419,6 @@
     "normalPrice": 12.50,
     "largePrice": 14.00,
     "image": "Null"
-  },
-  {
-    "id": 19,
-    "type": "bebidas",
-    "name": "Refresco de Naranja",
-    "description": "Refresco de color naranja con sabor a jugo de naranja",
-    "ingredients": [
-    "Agua carbonatada",
-    "azúcar",
-    "jugo de naranja",
-    "ácido cítrico",
-    "aromas naturales"
-    ],
-    "price": 2.20,
-    "image": "../public/images/OrangeSoda.jpeg"
-    },
-    {
-    "id": 20,
-    "type": "Personalizado",
-    "name": "Ramen Personalizado",
-    "description": "Crea tu propio ramen con los ingredientes que prefieras.",
-    "ingredients": {
-    "Caldos": {
-    "maxSelect": 1,
-    "options": [
-    "Caldo de pollo y dashi",
-    "Caldo de hueso de cerdo",
-    "Caldo de verduras",
-    "Caldo de cerdo y mariscos"
-    ]
-    },
-    "Proteínas": {
-    "maxSelect": 3,
-    "options": [
-    "Chashu de pollo",
-    "Chashu de cerdo",
-    "Camarones",
-    "Calamares",
-    "Carne de cerdo molida",
-    "Pollo molido",
-    "Pollo frito"
-    ]
-    },
-    "Vegetales": {
-    "maxSelect": 3,
-    "options": [
-    "Bambú cocido",
-    "Espinacas",
-    "Brotes de soja",
-    "Zanahoria",
-    "Repollo",
-    "Cebolla",
-    "Champiñones",
-    "Pepino",
-    "Tomate"
-    ]
-    },
-    "Condimentos": {
-    "maxSelect": 2,
-    "options": [
-    "Algas nori",
-    "Doubanjiang",
-    "Sake",
-    "Mirin",
-    "Algas kombu",
-    "Jengibre",
-    "Katsuobushi",
-    "Jengibre encurtido",
-    "Ajo picado"
-    ]
-    },
-    "Otros": {
-    "maxSelect": 2,
-    "options": [
-    "Tofu",
-    "Maíz dulce",
-    "Huevo marinado",
-    "Huevo duro",
-    "Jamón",
-    "Maní"
-    ]
-    }
-    },
-    "Salsas": {
-    "maxSelect": 2,
-    "options": [
-    "Salsa de soja",
-    "Pasta de miso",
-    "Pasta de sésamo",
-    "Aceite de chili",
-    "Aceite de sésamo",
-    "Aceite aromático"
-    ]
-    },
-    "size": [
-    "Normal",
-    "Grande"
-    ],
-    "normalPrice": 12.50,
-    "largePrice": 14.00,
-    "image": "Nulo"
-    }
+  }
+  
 ]

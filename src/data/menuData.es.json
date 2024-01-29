@@ -241,7 +241,7 @@
     },
     {
       "id": 13,
-      "type": "bebidas",
+      "type": "drinks",
       "name": "Agua",
       "description": "Simplemente agua",
       "ingredients": [],
@@ -250,7 +250,7 @@
     },
     {
       "id": 14,
-      "type": "bebidas",
+      "type": "drinks",
       "name": "Té Negro",
       "description": "Té negro con cuerpo y ricos matices de roble y malta",
       "ingredients": [
@@ -263,7 +263,7 @@
     },
     {
       "id": 15,
-      "type": "bebidas",
+      "type": "drinks",
       "name": "Café",
       "description": "Bebida aromática y estimulante hecha con granos de café tostados y molidos",
       "ingredients": [
@@ -276,7 +276,7 @@
     },
     {
       "id": 16,
-      "type": "bebidas",
+      "type": "drinks",
       "name": "Soda de Cola",
       "description": "Soda de color oscuro con sabor a caramelo y extractos de plantas",
       "ingredients": [
@@ -292,7 +292,7 @@
     },
     {
       "id": 17,
-      "type": "bebidas",
+      "type": "drinks",
       "name": "Frappe",
       "description": "Café frío en forma de batido con hielo triturado y crema o leche",
       "ingredients": [
@@ -308,7 +308,7 @@
     },
     {
       "id": 18,
-      "type": "bebidas",
+      "type": "drinks",
       "name": "Té Verde",
       "description": "Té verde puro de origen único con un sutil final ahumado-dulce",
       "ingredients": [
@@ -318,7 +318,108 @@
       ],
       "price": 2.50,
       "image": "../public/images/GreenTea.jpeg"
-    }
+    },
+    {
+      "id": 19,
+      "type": "drinks",
+      "name": "Refresco de Naranja",
+      "description": "Refresco de color naranja con sabor a jugo de naranja",
+      "ingredients": [
+      "Agua carbonatada",
+      "azúcar",
+      "jugo de naranja",
+      "ácido cítrico",
+      "aromas naturales"
+      ],
+      "price": 2.20,
+      "image": "../public/images/OrangeSoda.jpeg"
+      },
+      {
+      "id": 20,
+      "type": "custom",
+      "name": "Ramen Personalizado",
+      "description": "Crea tu propio ramen con los ingredientes que prefieras.",
+      "ingredients": {
+      "Caldos": {
+      "maxSelect": 1,
+      "options": [
+      "Caldo de pollo y dashi",
+      "Caldo de hueso de cerdo",
+      "Caldo de verduras",
+      "Caldo de cerdo y mariscos"
+      ]
+      },
+      "Proteínas": {
+      "maxSelect": 3,
+      "options": [
+      "Chashu de pollo",
+      "Chashu de cerdo",
+      "Camarones",
+      "Calamares",
+      "Carne de cerdo molida",
+      "Pollo molido",
+      "Pollo frito"
+      ]
+      },
+      "Vegetales": {
+      "maxSelect": 3,
+      "options": [
+      "Bambú cocido",
+      "Espinacas",
+      "Brotes de soja",
+      "Zanahoria",
+      "Repollo",
+      "Cebolla",
+      "Champiñones",
+      "Pepino",
+      "Tomate"
+      ]
+      },
+      "Condimentos": {
+      "maxSelect": 2,
+      "options": [
+      "Algas nori",
+      "Doubanjiang",
+      "Sake",
+      "Mirin",
+      "Algas kombu",
+      "Jengibre",
+      "Katsuobushi",
+      "Jengibre encurtido",
+      "Ajo picado"
+      ]
+      },
+      "Otros": {
+      "maxSelect": 2,
+      "options": [
+      "Tofu",
+      "Maíz dulce",
+      "Huevo marinado",
+      "Huevo duro",
+      "Jamón",
+      "Maní"
+      ]
+      }
+      },
+      "Salsas": {
+      "maxSelect": 2,
+      "options": [
+      "Salsa de soja",
+      "Pasta de miso",
+      "Pasta de sésamo",
+      "Aceite de chili",
+      "Aceite de sésamo",
+      "Aceite aromático"
+      ]
+      },
+      "size": [
+      "Normal",
+      "Grande"
+      ],
+      "normalPrice": 12.50,
+      "largePrice": 14.00,
+      "image": "Nulo"
+      }
     
 
 ]
