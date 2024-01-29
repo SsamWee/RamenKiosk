@@ -105,7 +105,7 @@ hr {
 }
 
 .custom-ramen-image {
-  background-image: url('./public/images/CustomRamen.jpeg');
+  background-image: url('images/CustomRamen.jpeg');
   background-position: center center;
   background-size: 100vh;
   width: 500px;
