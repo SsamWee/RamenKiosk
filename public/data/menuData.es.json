@@ -16,7 +16,7 @@
         "Cebolla verde"
       ],
       "price": 8.50,
-      "image": "../public/images/ShioRamen.jpeg"
+      "image": "images/ShioRamen.jpeg"
     },
     {
       "id": 2,
@@ -36,7 +36,7 @@
         "Espinacas"
       ],
       "price": 9.00,
-      "image": "../public/images/MisoRamen.jpeg"
+      "image": "images/MisoRamen.jpeg"
     },
     {
       "id": 3,
@@ -60,7 +60,7 @@
         "Brotes de soja"
       ],
       "price": 8.00,
-      "image": "../public/images/ShoyuRamen.jpeg"
+      "image": "images/ShoyuRamen.jpeg"
     },
     {
       "id": 4,
@@ -78,7 +78,7 @@
         "Cebolla verde"
       ],
       "price": 10.00,
-      "image": "../public/images/TonkotsuRamen.jpeg"
+      "image": "images/TonkotsuRamen.jpeg"
     },
     {
       "id": 5,
@@ -96,7 +96,7 @@
         "Cebolla verde"
       ],
       "price": 7.50,
-      "image": "../public/images/YasaiRamen.jpeg"
+      "image": "images/YasaiRamen.jpeg"
     },
     {
       "id": 6,
@@ -117,7 +117,7 @@
         "Jengibre encurtido"
       ],
       "price": 8.00,
-      "image": "../public/images/HiyashiChukka.jpeg"
+      "image": "images/HiyashiChukka.jpeg"
     },
     {
       "id": 7,
@@ -136,7 +136,7 @@
         "Limón"
       ],
       "price": 10.50,
-      "image": "../public/images/EbiRamen.jpeg"
+      "image": "images/EbiRamen.jpeg"
     },
     {
       "id": 8,
@@ -159,7 +159,7 @@
         "Hongos"
       ],
       "price": 11.00,
-      "image": "../public/images/ChamponRamen.jpeg"
+      "image": "images/ChamponRamen.jpeg"
     },
     {
       "id": 9,
@@ -182,7 +182,7 @@
         "Chili seco"
       ],
       "price": 9.00,
-      "image": "../public/images/Tantanmen.jpeg"
+      "image": "images/Tantanmen.jpeg"
     },
     {
       "id": 10,
@@ -200,7 +200,7 @@
         "Cebolla verde"
       ],
       "price": 9.50,
-      "image": "../public/images/TorikotsuRamen.jpeg"
+      "image": "images/TorikotsuRamen.jpeg"
     },
     {
       "id": 11,
@@ -219,7 +219,7 @@
         "Cebolla verde"
       ],
       "price": 9.50,
-      "image": "../public/images/TsukemenRamen.jpeg"
+      "image": "images/TsukemenRamen.jpeg"
     },
     {
       "id": 12,
@@ -237,7 +237,7 @@
         "Ajo picado"
       ],
       "price": 10.00,
-      "image": "../public/images/HakataRamen.jpeg"
+      "image": "images/HakataRamen.jpeg"
     },
     {
       "id": 13,
@@ -246,7 +246,7 @@
       "description": "Simplemente agua",
       "ingredients": [],
       "price": 1.80,
-      "image": "../public/images/Water.jpeg"
+      "image": "images/Water.jpeg"
     },
     {
       "id": 14,
@@ -259,7 +259,7 @@
         "azúcar (opcional)"
       ],
       "price": 2.50,
-      "image": "../public/images/BlackTea.jpeg"
+      "image": "images/BlackTea.jpeg"
     },
     {
       "id": 15,
@@ -272,7 +272,7 @@
         "leche o crema (opcional)"
       ],
       "price": 2.00,
-      "image": "../public/images/Coffee.jpeg"
+      "image": "images/Coffee.jpeg"
     },
     {
       "id": 16,
@@ -288,7 +288,7 @@
         "aromas naturales"
       ],
       "price": 2.20,
-      "image": "../public/images/ColaSoda.jpeg"
+      "image": "images/ColaSoda.jpeg"
     },
     {
       "id": 17,
@@ -304,7 +304,7 @@
         "chocolate o caramelo (opcional)"
       ],
       "price": 3.50,
-      "image": "../public/images/Frappe.jpeg"
+      "image": "images/Frappe.jpeg"
     },
     {
       "id": 18,
@@ -317,7 +317,7 @@
         "miel o limón (opcional)"
       ],
       "price": 2.50,
-      "image": "../public/images/GreenTea.jpeg"
+      "image": "images/GreenTea.jpeg"
     },
     {
       "id": 19,
@@ -332,7 +332,7 @@
       "aromas naturales"
       ],
       "price": 2.20,
-      "image": "../public/images/OrangeSoda.jpeg"
+      "image": "images/OrangeSoda.jpeg"
       },
       {
       "id": 20,

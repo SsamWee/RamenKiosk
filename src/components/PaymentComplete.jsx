@@ -31,7 +31,7 @@ export const PaymentComplete = () => {
                                 <h2 className="item-name"><FaLongArrowAltDown /> {t('pleaseBeSure')} <FaLongArrowAltDown /></h2>
                                 <p>{t('pleaseWait')}</p>
                             </div>
-                            <img className="logo" src="./src/assets/receipt.png" alt="Receipt" />
+                            <img className="logo" src="./images/receipt.png" alt="Receipt" />
                             <div className="payment-back">
                                 <h3 >{t('backTo')}</h3> <Countdown initialCount={20} onEnd={handleCountdownEnd} /> <h3>{t('seconds')}</h3>
                             </div>

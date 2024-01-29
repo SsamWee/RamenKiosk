@@ -11,7 +11,7 @@ export const HomePage = () => {
             <div className="page-container" >
                 <div className="page-subcontainer">
                     <div className="logo-container">
-                        <img className="logo animate__animated animate__fadeIn" src="./src/assets/Logo.png" alt="Kagurashi Ramen Logo" />
+                        <img className="logo animate__animated animate__fadeIn" src="./images/Logo.png" alt="Kagurashi Ramen Logo" />
                         <h1>Kagurashi Ramen</h1>
                     </div>
 
