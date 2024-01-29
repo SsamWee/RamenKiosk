@@ -1,4 +1,4 @@
-import { Navigate, Route, Routes } from "react-router-dom"
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom"
 import { HomePage } from "../pages/HomePage"
 import { MenuPage } from "../pages/MenuPage"
 import { CheckOut, PaymentComplete } from "../components"
@@ -6,7 +6,8 @@ import { CustomizePage } from "../pages/CustomizePage"
 
 export const AppRouter = () => {
   return (
-    <>
+  
+
     <Routes>
 
       <Route path="/" element={<Navigate to="homepage" />} />
@@ -17,6 +18,6 @@ export const AppRouter = () => {
       <Route path="paymentComplete" element={<PaymentComplete />} />
 
     </Routes>
-    </>
+
   )
 }

@@ -11,7 +11,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   //<React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename='/SelfServiceApp'>
       <RamenApp />
     </BrowserRouter>
   //</React.StrictMode>
