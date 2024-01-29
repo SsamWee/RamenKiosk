@@ -1,7 +1,12 @@
 import { useContext } from "react";
-import { AppContext, LanguagesIndex } from "../../context/index";
+import { AppContext } from "../../context/index";
 
 export const Language = () => {
+
+  const LanguagesIndex = [
+    { label: 'spanish', code: 'es' },
+    { label: 'english', code: 'en' },
+]
   
   const { addLanguage, i18n, t } = useContext( AppContext );
 
