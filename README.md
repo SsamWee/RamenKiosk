@@ -30,7 +30,10 @@ All images are created with Dall-E 3.
 
 ## 🧰 Demo
 ![Badge en Desarollo](https://img.shields.io/badge/STATUS-Developing-green) 
-
+<br>
+- This application is not responsive yet.
+- It is designed for horizontal devices.
+   
 <h3><a href="https://ssamuelfernandez.github.io/SelfServiceApp/">View Demo</a><h3/>
 
 ## 💻 Tech Stack
