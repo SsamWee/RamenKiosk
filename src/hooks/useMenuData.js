@@ -8,7 +8,7 @@ export function useMenuData() {
   useEffect(() => {
     const loadMenuData = async () => {
       const language = i18n.language;
-      const response = await fetch(`/public/data/menuData.${language}.json`);
+      const response = await fetch(`/data/menuData.${language}.json`);
       const menuData = await response.json();
       setData(menuData);
     };
